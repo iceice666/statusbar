@@ -1,0 +1,33 @@
+[workspace]
+members = ["statusbar", "nm-dbus", "mpris-dbus"]
+resolver = "2"
+
+[workspace.dependencies]
+# UI Framework
+relm4 = "0.10.0"
+gtk4-layer-shell = "0.7"
+
+# Async runtime
+tokio = { version = "1", features = ["rt", "macros", "time"] }
+
+# D-Bus
+zbus = { version = "5", default-features = false, features = ["tokio"] }
+mpris = "2.0"
+
+# System monitoring
+sysinfo = "0.33"
+procfs = { version = "0.18.0", features = ["chrono"] }
+battery = "0.7"
+
+# Workspace integration
+niri-ipc = "25.8.0"
+
+# SCSS compilation
+grass = "0.13"
+
+# Utilities
+chrono = "0.4.42"
+thiserror = "2.0.17"
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"
+dirs = "5.0"
