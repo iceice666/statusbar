@@ -1,0 +1,44 @@
+// Workspace Widget Styles
+
+.workspace-widget {
+  @include widget-container;
+}
+
+.workspace-button {
+  min-width: $min-button-size;
+  min-height: $min-button-size;
+  padding: 0;
+  margin: 0 $spacing-xs;
+  border-radius: $radius-sm;
+  border: $border-transparent;
+  background: $bg-button;
+  color: $text-muted;
+  font-weight: 500;
+
+  &.workspace-empty {
+    background: $workspace-empty-bg;
+    color: $text-dimmed;
+  }
+
+  &.workspace-occupied {
+    background: $workspace-occupied-bg;
+    color: $text-primary;
+  }
+
+  &.workspace-active {
+    background: $workspace-active-bg;
+    color: $text-primary;
+    border-color: $accent-blue-border;
+  }
+
+  &.workspace-focused {
+    background: $workspace-focused-bg;
+    color: $text-primary;
+    border-color: $accent-blue-full;
+  }
+
+  &:hover {
+    background: $workspace-hover-bg;
+    color: $text-primary;
+  }
+}

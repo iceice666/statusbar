@@ -1,0 +1,59 @@
+// Media Player Widget Styles
+
+.media-player-widget {
+  background: $bg-widget;
+  border-radius: $radius-md;
+  padding: 0;
+  margin: 0 $spacing-sm;
+}
+
+.media-info-button {
+  @include transparent-button;
+}
+
+.media-title {
+  color: $text-primary;
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+// Popover styles
+.popover-title {
+  @include popover-title;
+}
+
+.popover-artist {
+  @include popover-text($text-secondary);
+}
+
+.popover-album {
+  @include popover-text($text-tertiary);
+}
+
+.popover-status {
+  @include popover-text($text-muted);
+  margin-top: $spacing-xl;
+}
+
+// Media controls
+.media-controls {
+  // Container styling if needed
+}
+
+.media-button {
+  min-width: $media-button-size;
+  min-height: $media-button-size;
+  padding: 0;
+  border-radius: $radius-md;
+  border: none;
+  background: $bg-button;
+  color: $text-primary;
+  font-size: 1.2rem;
+
+  @include button-hover;
+}
+
+.media-play-pause {
+  font-size: 1.36rem;
+  min-width: $media-play-button-size;
+}

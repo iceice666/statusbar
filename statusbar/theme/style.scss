@@ -1,0 +1,22 @@
+// Statusbar Theme - Minimal & Semi-transparent & Compact
+// Main SCSS entry point - imports all modular components
+
+// 1. Import variables and mixins first
+@import 'variables';
+@import 'mixins';
+
+// 2. Import base styles
+@import 'base';
+
+// 3. Import component styles
+@import 'widgets/popover';
+
+// 4. Import widget-specific styles
+@import 'widgets/clock';
+@import 'widgets/workspace';
+@import 'widgets/window_title';
+@import 'widgets/media_player';
+@import 'widgets/resources';
+@import 'widgets/wifi';
+@import 'widgets/battery';
+@import 'widgets/tray';

@@ -1,0 +1,46 @@
+@import "../variables";
+@import "../mixins";
+
+// Popover container styling
+.popover-title {
+    color: $text-primary;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: $spacing-sm;
+}
+
+// Detail row layout - two column
+.detail-row {
+    padding: $spacing-xs 0;
+
+    .detail-label {
+        color: $text-secondary;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .detail-value {
+        color: $text-primary;
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+}
+
+// Widget-specific detail value styling
+.battery-detail {
+    font-family: monospace;
+}
+
+.wifi-detail {
+    font-family: monospace;
+}
+
+.media-detail {
+    // Regular font for media player details
+}
+
+// Separator styling
+separator {
+    background: $border-color;
+    min-height: 0.0625rem; // 1px
+}

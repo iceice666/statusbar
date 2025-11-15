@@ -1,0 +1,115 @@
+// System Resources Widget Styles
+
+.resources-widget {
+    @include widget-container;
+}
+
+.resources-button {
+    @include transparent-button;
+}
+
+.resource-item {
+    padding: 0;
+    margin: 0;
+    // Vertical layout with label on top
+}
+
+.resource-label {
+    color: $text-tertiary;
+    font-size: 0.76rem;
+    font-weight: 500;
+}
+
+.resource-value {
+    @include monospace-value;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+// Colored resource values
+.cpu-value {
+    color: $status-success;
+}
+
+.memory-value {
+    color: $status-info;
+}
+
+.network-values {
+    // Container styling if needed
+}
+
+.network-icon {
+    color: $text-tertiary;
+    font-size: 0.84rem;
+}
+
+.network-rx {
+    color: $status-warning;
+}
+
+.network-tx {
+    color: $status-error;
+}
+
+.disk-icon {
+    color: $text-tertiary;
+    font-size: 0.84rem;
+}
+
+.disk-read {
+    color: $status-purple;
+}
+
+.disk-write {
+    color: $status-accent;
+}
+
+// Resource Details Popover
+.resource-details {
+    margin: $spacing-xl 0;
+}
+
+.detail-row {
+    @include detail-row;
+}
+
+.detail-label {
+    @include popover-detail;
+}
+
+.detail-value {
+    @include monospace-value;
+}
+
+// Detail-specific colors
+.cpu-detail {
+    color: $status-success;
+}
+
+.memory-detail {
+    color: $status-info;
+}
+
+.network-detail {
+    color: $status-warning;
+}
+
+.disk-detail {
+    color: $status-purple;
+}
+
+.temp-detail {
+    color: $status-pink;
+}
+
+.gpu-detail {
+    color: $status-yellow;
+}
+
+.config-title {
+    color: $text-primary;
+    font-size: 0.92rem;
+    font-weight: 600;
+    margin-bottom: $spacing-md;
+}

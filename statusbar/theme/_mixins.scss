@@ -1,0 +1,61 @@
+// Hover Effect Mixin
+@mixin button-hover {
+  &:hover {
+    background: $bg-hover;
+  }
+
+  &:active {
+    background: $bg-active;
+  }
+}
+
+// Transparent Button Base
+@mixin transparent-button {
+  background: $bg-button;
+  border: none;
+  box-shadow: none;
+  border-radius: $radius-md;
+  padding: $spacing-sm $spacing-lg;
+  margin: 0;
+
+  @include button-hover;
+}
+
+// Widget Container
+@mixin widget-container {
+  padding: 0;
+  margin: 0;
+}
+
+// Popover Text Styles
+@mixin popover-title {
+  color: $text-primary;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: $spacing-md;
+}
+
+@mixin popover-text($color: $text-secondary) {
+  color: $color;
+  font-size: 0.84rem;
+  font-weight: 400;
+}
+
+@mixin popover-detail {
+  color: $text-secondary;
+  font-size: 0.84rem;
+  font-weight: 400;
+}
+
+// Monospace Value
+@mixin monospace-value($color: $text-primary) {
+  color: $color;
+  font-size: 0.84rem;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+// Detail Row
+@mixin detail-row {
+  padding: $spacing-md 0;
+}
