@@ -1,0 +1,16 @@
+// Clock Widget Styles
+
+.clock-widget {
+  @include widget-container;
+}
+
+.clock-label {
+  color: $text-primary;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: monospace;
+}
+
+.clock-time-button {
+  @include transparent-button;
+}

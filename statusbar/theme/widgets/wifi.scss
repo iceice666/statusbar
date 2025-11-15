@@ -1,0 +1,110 @@
+// WiFi Widget Styles
+
+.wifi-widget {
+    @include widget-container;
+}
+
+.wifi-button {
+    @include transparent-button;
+}
+
+.wifi-icon {
+    color: $status-accent;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.wifi-ssid {
+    color: $text-primary;
+    font-size: 0.84rem;
+    font-weight: 500;
+}
+
+.wifi-detail {
+    @include popover-detail;
+}
+
+// Networks section
+.networks-header {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.networks-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: $text-secondary;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+// buttons
+.disconnect-button .refresh-button {
+    padding: 4px;
+    min-width: 16px;
+    min-height: 16px;
+
+    &:hover {
+        background-color: rgba($text-primary, 0.1);
+    }
+}
+.disconnect-button {
+    color: $status-error;
+}
+
+// Network list
+.network-list {
+    padding: 4px;
+}
+
+.network-item {
+    @include transparent-button;
+    margin: 2px 0;
+    border-radius: 2px;
+
+    &:hover {
+        background-color: rgba($status-accent, 0.1);
+    }
+
+    &:active {
+        background-color: rgba($status-accent, 0.2);
+    }
+}
+
+.network-signal {
+    color: $status-accent;
+    font-size: 1.7rem;
+    min-width: 24px;
+}
+
+.network-ssid {
+    font-size: 0.8rem;
+    color: $text-primary;
+    font-weight: 500;
+}
+
+.network-lock {
+    color: $text-secondary;
+    font-size: 1rem;
+    margin-left: 4px;
+}
+
+.network-connected {
+    font-size: 0.76rem;
+    color: $status-success;
+    font-weight: 700;
+    padding: 2px 8px;
+    background-color: rgba($status-success, 0.15);
+    border-radius: 1px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.network-loading,
+.network-empty {
+    padding: 20px;
+    text-align: center;
+    color: $text-secondary;
+    font-size: 0.84rem;
+    font-style: italic;
+}

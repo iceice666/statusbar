@@ -1,0 +1,33 @@
+// Battery Widget Styles
+
+.battery-widget {
+    @include widget-container;
+}
+
+.battery-button {
+    @include transparent-button;
+}
+
+.battery-icon {
+    font-size: 2rem;
+
+    &.battery-full {
+        color: $status-success;
+    }
+
+    &.battery-medium {
+        color: $status-warning;
+    }
+
+    &.battery-low {
+        color: $status-error;
+    }
+
+    &.battery-charging {
+        color: $status-accent;
+    }
+}
+
+.battery-detail {
+    @include popover-detail;
+}
